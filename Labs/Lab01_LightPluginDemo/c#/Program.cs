@@ -33,7 +33,7 @@ var chatCompletionService = kernel.GetRequiredService<IChatCompletionService>();
 kernel.Plugins.AddFromType<LightsPlugin>("Lights");
 
 // Enable planning
-OpenAIPromptExecutionSettings openAIPromptExecutionSettings = new() 
+OpenAIPromptExecutionSettings openAIPromptExecutionSettings = new()
 {
     FunctionChoiceBehavior = FunctionChoiceBehavior.Auto()
 };
